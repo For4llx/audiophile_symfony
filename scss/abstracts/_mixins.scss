@@ -1,0 +1,118 @@
+@mixin h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    text-transform: uppercase;
+    line-height: 58px;
+    letter-spacing: 2px;
+}
+
+@mixin h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 44px;
+    letter-spacing: 1.5px;
+}
+
+@mixin h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 36px;
+    letter-spacing: 1.15px;
+}
+
+@mixin h4 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 38px;
+    letter-spacing: 2px;
+}
+
+@mixin h5 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 33px;
+    letter-spacing: 1.7px;
+}
+
+@mixin h6 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: 1.3px;
+}
+
+@mixin overline {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 19px;
+    letter-spacing: 10px;
+}
+
+@mixin subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+@mixin body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+@mixin button {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@mixin button-small {
+    width: 160px;
+    height: 48px;
+}
+
+@mixin input {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #cfcfcf;
+}
+
+@mixin label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -0.21px;
+    color: hsl(var(--black));
+}
+
+@mixin container {
+    padding-left: max(calc(50% - var(--container) / 2), 2rem);
+    padding-right: max(calc(50% - var(--container) / 2), 2rem);
+}

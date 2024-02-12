@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  em {
+    font-style: normal;
+  }
