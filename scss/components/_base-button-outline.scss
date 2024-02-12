@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.base-button-outline {
+    background-color: transparent;
+    border: 1px solid hsl(var(--black));;
+    color: hsl(var(--black));
+    @include button;
+    @include button-small;
+
+    &:hover {
+        background-color: hsl(var(--black));
+        color: hsl(var(--white));
+    }
+}

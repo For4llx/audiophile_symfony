@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+.base-button-primary {
+    color: hsl(var(--white));
+    background-color: hsl(var(--primary-color));
+    @include button;
+    @include button-small;
+
+    &:hover {
+        background-color: hsl(var(--primary-color-light));
+    }
+}
