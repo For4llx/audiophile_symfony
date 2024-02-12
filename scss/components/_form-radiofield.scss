@@ -1,0 +1,48 @@
+@use '../abstracts' as *;
+
+.form-radiofield {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: -0.21px;
+  color: hsl(var(--black));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  width: 309px;
+
+  &:hover {
+    border: 1px solid hsl(var(--primary-color));
+  }
+}
+
+.checkmark {
+  border-radius: 100%;
+  border: 1px solid #cfcfcf;
+  width: 20px;
+  height: 20px;
+}
+
+.form-radiofield input:checked ~ .checkmark {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cfcfcf;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: hsl(var(--primary-color));
+  }
+}

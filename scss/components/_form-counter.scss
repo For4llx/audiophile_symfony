@@ -1,0 +1,47 @@
+@use '../abstracts' as *;
+
+.form-counter {
+    display: flex;
+
+    &__button {
+        width: fit-content;
+        background-color: hsl(var(--grey));
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        width: 100%;
+        cursor: pointer;
+        color: hsl(var(--black), 25%);
+      
+        &:hover {
+          color: hsl(var(--primary-color));
+        }
+      
+        &:disabled {
+          cursor: wait;
+        }
+    }
+
+    &__value {
+        width: fit-content;
+        background-color: hsl(var(--grey));
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--small {
+        height: 32px;
+        width: 96px;
+    }
+
+    &--large {
+      height: 48px;
+      width: 120px;
+    }
+}

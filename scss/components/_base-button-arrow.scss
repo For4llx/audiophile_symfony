@@ -1,14 +1,30 @@
 @use '../abstracts' as *;
 
 .base-button-arrow {
+    padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 13px;
-    color: hsl(var(--black), 50%);
+    background-color: transparent;
+    color: hsla(var(--black), 50%);
     @include button;
-
+  
     &:hover {
-        color: hsl(var(--primary-color));
+      color: hsl(var(--primary-color));
     }
-}
+  
+    &::after {
+      content: url("../../assets/images/shared/large/icon-arrow-right.svg");
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  .base-button-arrow:hover {
+    color: hsl(var(--primary-color));
+  }
+  
+  .base-button-arrow::after {
+    content: url("../../assets/images/shared/large/icon-arrow-right.svg");
+    display: flex;
+    align-items: center;  
+    }

@@ -1,0 +1,8 @@
+{% props placeholder = "", label = "", variant = "" %}
+
+<label class="form-textfield form-textfield--{{ variant }}">
+    <span>{{ label }}</span>
+    <span class="form-textfield__error">Wrong format</span>
+    <input class="form-textfield__input" type="text" placeholder="{{ placeholder }}" />
+</label>
+ 

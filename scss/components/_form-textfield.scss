@@ -1,0 +1,43 @@
+@use '../abstracts' as *;
+
+.form-textfield {
+  @include label;
+
+  &__input {
+    caret-color: hsl(var(--primary-color));
+    font-size: 14px;
+    color: hsl(var(--black));
+    font-weight: bold;
+    letter-spacing: -0.25px;
+    @include input;
+  
+    &::placeholder {
+      color: hsl(var(--black), 40%);
+    }
+  
+    &:focus {
+      border-color: hsl(var(--primary-color));
+    }
+  
+    &:invalid {
+      color: hsl(var(--error-color));
+      border-color: hsl(var(--error-color));
+  
+      .textfield__error {
+        visibility: visible;
+      }
+    }
+  }
+  
+  &__error {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: hsl(var(--error-color));
+  }
+
+  &--small {
+      width: 309px;
+  }
+}
